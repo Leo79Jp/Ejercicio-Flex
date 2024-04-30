@@ -22,15 +22,22 @@ header {
   background: var(--gray);
   color: var(--white);
   padding: 0.5rem 1.25rem;
-  /*Añadimos flex*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  
 }
 
 header nav ul {
-  /*Añadimos flex*/
+  display: flex;
+  gap: 20px;
 }
 
 header .header__logo {
-  /*Añadimos flex*/
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 header .header__logo span,
@@ -49,7 +56,10 @@ main {
 }
 
 main .container {
-  /*Añadimos flex*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 main section .card {
@@ -71,7 +81,11 @@ main section .delivery span {
 main section .podio {
   background: #fff;
   font-weight: bold;
-  /*Añadimos flex*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 main section .podio h3 {
   color: var(--red);
@@ -87,7 +101,8 @@ main section .podio h3 {
 }
 
 .top5 {
-  /*Añadimos flex*/
+  display: flex;
+  gap: 50px;
 }
 
 .top5 .podio__pizzas ol li {
@@ -96,27 +111,43 @@ main section .podio h3 {
 
 .top5 .podio__img {
   padding-bottom: 60px;
-  /*Añadimos flex*/
+  display: flex;
+
 }
 
 footer {
   background: #222;
   padding: 19px 20px;
-  /*Añadimos flex*/
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+
 }
 
 footer .footer__logo {
   color: var(--lightWhite);
   font-size: 14px;
-  /*Añadimos flex*/
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+
 }
 
 footer ul {
   color: var(--lightWhite);
-  /*Añadimos flex*/
+  display: flex;
+  flex-direction: column;
+  gap: 8px
+
 }
 
 @media screen and (max-width:  768px) {
    /* - Ocultar los botone de nav (del header)
       - Añadir el ícono hamburguesa */
+      header nav ul {
+        display: none;
+        
+      }
+      
 }
